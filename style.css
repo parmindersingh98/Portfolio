@@ -1,0 +1,146 @@
+:root {
+    --text: #3FC1C9;
+    --white: #F5F5F5;
+    --accent: #FC5185;
+    --dark: #364F6B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    background-color: var(--white);
+    width: 100vw;
+
+}
+
+.wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    margin: 2vh;
+    /* background-color: navajowhite; */
+    justify-content: space-around;
+    padding-bottom: 2vh;
+    border-bottom: 2px solid #ececec;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links p {
+    margin: 0 3vh;
+    color: var(--text);
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    border: 3px solid var(--white);
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-links p:hover {
+    background-color: var(--text);
+    color: var(--white);
+    border: 3px solid #75e9efa2;
+    scale: 1.05;
+
+}
+
+.menu {
+    display: hidden;
+}
+
+.logo {
+    /* background-color: var(--text); */
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: 'Pacifico', cursive;
+    color: var(--text);
+    font-size: 3rem;
+    transition: all ease 0.5s;
+}
+
+.logo:hover {
+    color: var(--accent);
+}
+
+
+/* Navbar */
+
+/* Main Section */
+
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon {
+    width: 25%;
+    margin: 5vh 0 1vh 0;
+}
+
+.my-name {
+    color: var(--text);
+    font-family: 'Pacifico', cursive;
+    font-size: 8vh;
+}
+
+.my-profile {
+    color: var(--accent);
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+}
+
+.main p {
+    width: 65%;
+    color: #666;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width:600px) {
+    .navbar {
+        margin: 1rem auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .user-icon {
+        width: 50%;
+        margin: 4vh 0;
+    }
+
+    .my-name {
+        font-size: 6vh;
+    }
+
+    .main p {
+        width: 100%;
+    }
+
+}
